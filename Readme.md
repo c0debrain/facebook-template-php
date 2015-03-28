@@ -32,8 +32,16 @@ Deploy to Heroku directly
 If you prefer to deploy yourself, push this code to a new Heroku app on the Cedar stack, then copy the App ID and Secret into your config vars:
 
     heroku create --stack cedar
+    heroku apps:rename <yourname>
     git push heroku master
     heroku config:add FACEBOOK_APP_ID=12345 FACEBOOK_SECRET=abcde
 
 Enter the URL for your Heroku app into the Website URL section of the Facebook app settings page, hen you can visit your app on the web.
+
+
+    git clone https://github.com/jonmountjoy/facebook-template-ruby
+    cd facebook-template-ruby
+    heroku create
+    $ Creating radiant-tor-1481 in organization heroku... done, region is us
+    http://radiant-tor-1481.herokuapp.com/ | git@heroku.com:radiant-tor-1481.git
 
